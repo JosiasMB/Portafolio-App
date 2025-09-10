@@ -37,7 +37,7 @@
 }
 
 .edu-card {
-  width: 400px;
+  width: 450px;
   background: #fff;
   padding: 1.5rem;
   border-radius: 12px;
@@ -85,5 +85,8 @@
 @media (max-width: 800px) {
   .education-section {
     margin: 1rem 0;
+  }
+  .edu-card {
+    width: 100%;
   }
 }

@@ -10,10 +10,22 @@
 
 #experience h2 {
   font-size: 2rem;
-  color: rgb(49, 49, 49);
+  color: #333;
   text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
 }
 
+#experience h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fc6857;
+  /* accent */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
 .job {
   max-width: 600px;
   background: #fff;

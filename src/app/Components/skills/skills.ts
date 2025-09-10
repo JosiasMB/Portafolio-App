@@ -119,5 +119,45 @@ export class Skills implements OnInit {
       name: 'Slack',
       image: 'slack',
     },
+    {
+      name: 'Azure',
+      image: 'azure',
+    },
+    {
+      name: 'GCP',
+      image: 'gcp',
+    },
+    {
+      name: 'Nylas API',
+      image: 'nylas2',
+    },
+    {
+      name: 'Salesforce',
+      image: 'salesforce',
+    },
+    {
+      name: 'Zendesk',
+      image: 'zendesk',
+    },
+    {
+      name: 'OpenSearch',
+      image: 'opensearch',
+    },
+    {
+      name: 'Microsoft Excel',
+      image: 'ms',
+    },
+    {
+      name: 'Microsoft Word',
+      image: 'word',
+    },
+    {
+      name: 'Microsoft Power Point',
+      image: 'ppt',
+    },
+    {
+      name: 'Google Sheets',
+      image: 'sheets',
+    },
   ];
 }
