@@ -1,0 +1,70 @@
+.hobbies-section {
+  padding: 3rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    Segoe UI Symbol, 'Noto Color Emoji';
+  margin: 1rem 0 5rem 0;
+}
+
+.hobbies-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  position: relative;
+}
+
+.hobbies-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fc6857;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbie-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 100%;
+  min-width: 180px;
+  max-width: 240px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobbie-card img {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.hobbie-card span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.hobbie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 800px) {
+  .hobbies-section {
+    margin: 0 0 2rem 0;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,40 @@
+<div class="skills">
+  <!-- Technologies -->
+  <section>
+    <header>
+      <h2>Technologies</h2>
+    </header>
+    <main>
+      <div class="card" *ngFor="let techmodel of techModel">
+        <img src="assets/svg/{{ techmodel.image }}.svg" alt="{{ techmodel.name }}" />
+        <span class="card-text">{{ techmodel.name }}</span>
+      </div>
+    </main>
+  </section>
+
+  <!-- Databases -->
+  <section>
+    <header>
+      <h2>Databases</h2>
+    </header>
+    <main>
+      <div class="card" *ngFor="let dbmodel of dbModel">
+        <img src="assets/svg/{{ dbmodel.image }}.svg" alt="{{ dbmodel.name }}" />
+        <span class="card-text">{{ dbmodel.name }}</span>
+      </div>
+    </main>
+  </section>
+
+  <!-- Operating Systems -->
+  <section>
+    <header>
+      <h2>Operating Systems</h2>
+    </header>
+    <main>
+      <div class="card" *ngFor="let system of systemModel">
+        <img src="assets/svg/{{ system.image }}.svg" alt="MacOS" />
+        <span class="card-text">{{ system.name }}</span>
+      </div>
+    </main>
+  </section>
+</div>

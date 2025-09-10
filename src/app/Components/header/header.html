@@ -1,16 +1,53 @@
-<div class="container">
-  <header>
-    <div class="logo">
-      <a href="/"><img src="assets/svg/logo.svg" alt="Logo">
-      </a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/skills">Skills</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
+<header>
+  <div class="logo">
+    <a
+      (click)="scrollToTop()"
+      routerLink="/"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      target="_self"
+      rel="noopener noreferrer"
+    >
+      <img src="assets/svg/logo.svg" alt="Logo" />
+    </a>
+  </div>
+
+  <!-- Hamburger Icon (mobile only) -->
+  <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('active')">☰</div>
+
+  <nav>
+    <ul>
+      <li>
+        <a
+          (click)="scrollToTop()"
+          routerLink="/"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          onclick="document.querySelector('nav').classList.remove('active')"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="scrollToTop()"
+          routerLink="/projects"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          onclick="document.querySelector('nav').classList.remove('active')"
+          >Projects</a
+        >
+      </li>
+
+      <li>
+        <a
+          (click)="scrollToTop()"
+          routerLink="/contact"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          onclick="document.querySelector('nav').classList.remove('active')"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
