@@ -65,7 +65,7 @@ ngOnInit(): void {
       this.cambioText();
       emailjs.init(this.user_id);
       const response = await emailjs.send(
-        'service_jj3ned6',
+        'portafolio',
         'template_123nyfv',
         {
           from_name: this.form.value.from_name,
