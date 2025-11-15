@@ -75,11 +75,12 @@
     <!-- <app-social-media-links></app-social-media-links> -->
   </div>
   <div class="container">
-    <app-alert
-      *ngIf="isAlertVisible"
-      [message]="alertMessage"
-      (close)="onAlertClosed()"
-    ></app-alert>
+@if (isAlertVisible) {
+  <app-alert
+    [message]="alertMessage"
+    (close)="onAlertClosed()"
+  ></app-alert>
+}
     <form [formGroup]="form" action="javascript:void(0)" (submit)="sendEmail()">
       <div class="form-group">
         <label for="name">Name </label>
