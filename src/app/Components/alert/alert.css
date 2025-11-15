@@ -47,7 +47,7 @@
 }
 
 .btn {
-  background-color: #f9bc60;
+  background-color: #fc6857;
   color: #001e1d;
   padding: 8px 16px;
   border: none;
@@ -58,6 +58,6 @@
 }
 
 .btn:hover {
-  background-color: #f9bc60ad;
+  background-color: #fa604f;
   color: #fffffe;
 }
